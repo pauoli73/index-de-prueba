@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estampau</title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f0ebeb;
+      color: #dd1a1a;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #fda6a6;
+      color: rgb(243, 238, 238);
+      padding: 1%;
+      text-align: center;
+    }
+
+    /* Navegación con Flexbox */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #fda6a6;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Contenido principal */
+    main {
+      padding: 30px;
+    }
+
+    /* Sección de productos */
+    .productos {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .tarjeta-producto {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .imagen-producto {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #e6a198;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Estampau </h1>
+    <p>Tienda de Bordados</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <h2>Productos destacados</h2>
+
+    <section class="productos">
+      <div class="tarjeta-producto">
+        <div class="imagen-producto"><img src="mickey zafari.png" alt="parche,bordado,mickey"></div>
+        <h3>Parche Bordado</h3>
+        <p>Personaje Mickey</p>
+      </div>
+
+      <div class="tarjeta-producto">
+        <div class="imagen-producto"><img src="Parche Mafalda.png" alt="parche,mafalda,bordado"></div>
+        <h3>Parche Bordado</h3>
+        <p>Personaje Mafalda</p>
+      </div>
+
+      <div class="tarjeta-producto">
+        <div class="imagen-producto"><img src="escarapelas.png" alt="escarapelas-argentina"></div>
+        <h3>Escarapelas</h3>
+        <p>Escarapelas </p>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>© 2026 Estampau - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
